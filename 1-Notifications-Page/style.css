@@ -1,0 +1,100 @@
+/* Definición de variables de colores*/
+:root{
+    /*Primario*/
+ --c-Red: hsl(1, 90%, 64%);
+ --c-Blue: hsl(219, 85%, 26%);
+
+    /*Neutral*/
+    --c-White:                   hsl(0, 0%, 100%);
+    --c-Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --c-Light-grayish-blue-1:    hsl(211, 68%, 94%);
+    --c-Light-grayish-blue-2:    hsl(205, 33%, 90%);
+    --c-Grayish-blue:            hsl(219, 14%, 63%);
+    --c-Dark-grayish-blue:       hsl(219, 12%, 42%);
+    --c-Very-dark-blue:          hsl(224, 21%, 14%);
+};
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 10px;
+    background-color: var(--c-Very-light-grayish-blue);
+}
+
+
+.contenedor-principal{
+    background-color: var(--c-White);
+    width: 70em;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 1.2em;
+    margin: 2em auto;
+    border-radius: 2em;
+}
+
+.contenedor-titulos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contenedor-titulos__h1{
+    font-size: 2.4em;
+    display: flex;
+    align-items: center;
+}
+.contenedor-titulos__span{
+    font-size: 0.5em;
+    width: 3em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1em;
+    background-color: var(--c-Blue);
+    color: var(--c-White);
+    border-radius: 0.5em;
+}
+.contenedor-titulos__p{
+    font-size: 1.5em;
+    color: var(--c-Dark-grayish-blue);
+}
+
+.contenedor-notificaciones{
+    margin-top: 1.5em;
+    
+}
+.notificacion{
+    background-color: var(--c-Light-grayish-blue-1);
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    border-radius: 1em;
+}
+.notificacion__img{
+    width: 5em;
+    margin-right: 1em;
+}
+.notificacion__p{
+    font-size: 1.7em;
+    color: var(--c-Dark-grayish-blue);
+}
+.notificacion__p > strong{
+    color: var(--c-Very-dark-blue);
+}
+
+
+
+
+
+
+
+/*
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%)
+    */
