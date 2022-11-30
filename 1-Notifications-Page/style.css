@@ -47,7 +47,7 @@ body{
     display: flex;
     align-items: center;
 }
-.contenedor-titulos__span{
+.contenedor-titulos__alerta{
     font-size: 0.5em;
     width: 3em;
     height: 2.5em;
@@ -73,6 +73,7 @@ body{
     border-radius: 1em;
     margin-top: 1.5em;
     position: relative;
+    background-color: var(--c-White);
 }
 .notificacion.pendiente{
     background-color: var(--c-Light-grayish-blue-1);
