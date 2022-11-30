@@ -1,0 +1,78 @@
+/*Definición de colores de la pagina*/
+:root{
+    --c-white:      #ffffff;
+    --c-blue-dark:  #0B0D17;
+    --c-celeste:    #D0D6F9;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Bellefair', serif;
+    font-size: 10px;
+}
+
+
+.fondo{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/home/background-home-desktop.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header{
+    width: 100%;
+    padding: 4em 0 0 5.5em;
+}
+.header .nav{
+    font-family: 'Barlow Condensed', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo{
+    width: 4.8em;
+    height: 4.8em;
+    border-radius: 50%;
+    background-color: var(--c-white);
+    display: grid;
+    place-items: center;
+}
+.nav-logo__img{
+    width: 100%;
+}
+.nav-ul::before{
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 50%;
+    position: absolute;
+    background-color: #ffffff;
+    left:-45%;
+    opacity: 23%;
+}
+.nav-ul{
+    width: 83em;
+    list-style: none;
+    padding: 0 16.5em 0 12.3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.04);
+}
+.nav-ul__li.activo{
+    height: 100%;
+    padding: 3.9em 0;
+    border-bottom: 0.3em solid var(--c-white);
+}
+.nav-li__a{
+    text-decoration: none;
+    font-size: 1.6em;
+    letter-spacing: 0.16em;
+    color: var(--c-white);
+}
