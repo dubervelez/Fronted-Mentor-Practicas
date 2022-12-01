@@ -131,6 +131,7 @@ body{
         align-items: flex-start;
         padding-top: 11.8em;
         transition: all 0.5s;
+        z-index: 2;
     }
     .nav-ul__li{
         padding: 0;

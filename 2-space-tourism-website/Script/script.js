@@ -6,7 +6,6 @@ const menu = document.querySelector(".nav-ul");
 
 abrirMenu.addEventListener("click", ()=>{
     menu.style.right = "0";
-    console.log(funciona)
     menu.style.transition = "all 1s";
 })
 
