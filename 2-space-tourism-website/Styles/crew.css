@@ -27,9 +27,11 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
 .contenido-principal{
     width: 48.8em;
+    position: relative;
 }
 .contenido-subtitulo-1{
     font-family: 'Barlow Condensed', sans-serif;
@@ -88,9 +90,105 @@ main{
 }
 
 
-
+@media only screen and (max-width: 1295px){
+    .seccion-contenido{
+        justify-content: center;
+        align-items: center;
+    }
+    .contenido-principal{
+        width: auto;
+        text-align: center;
+    }
+    .subnav{
+        margin: auto;
+    }
+    .contenido-parrafo{
+        margin-bottom: 2em;
+    }
+    .imagen{
+        margin-top: 4em;
+    }
+}
 
 @media only screen and (max-width: 780px){
-    
+    .fondo-crew{
+        background-image: url("../assets/crew/background-crew-tablet.jpg");
+    }
+    main{
+        margin-top: 4em;
+        padding: 0 3.8em 0 3.8em;
+    }
+    .contenido-subtitulo-1{
+        font-size: 2em;
+        margin-bottom: 3em;
+    }
+    .contenido-subtitulo-2{
+        margin-bottom: 0.3em;
+        font-size: 2.4em;
+    }
+    .contenido-titulo{
+        font-size: 4em;
+    }
+    .contenido-parrafo{
+        font-size: 1.6em;
+        margin-bottom: 2em;
+    }
+    .subnav{
+        margin-top: 0;
+        margin-bottom: 4em;
+        width: 8.8em;
+    }
+    .subnav__li{
+        width: 1em;
+        height: 1em;
+    }
+
+    .imagen{
+        margin-top: 4em;
+        width: 45.6em;
+    }
+    .imagen > img{
+        width: 100%;
+        object-fit: cover;
+    }
+
 } 
-@media only screen and (max-width: 470px) {}
+@media only screen and (max-width: 470px) {
+    .fondo-crew{
+        background-image: url("../assets/crew/background-crew-mobile.jpg");
+    }
+    .seccion-contenido{
+        flex-wrap: wrap-reverse;
+    }
+    .imagen{
+       border-bottom: 1px solid #ffffff60;
+        display: grid;
+        place-items: center;
+        margin-bottom: 3.2em;
+    }
+    .imagen > img{
+        width: 31em;
+        height: 22.3em;
+        object-fit: scale-down;
+    }
+    .contenido-subtitulo-1{
+        width: 100%;
+        font-size: 1.6em;
+        position: absolute;
+        top:  -296px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .contenido-subtitulo-2{
+        margin-bottom: 0.3em;
+        font-size: 1.6em;
+    }
+    .contenido-titulo{
+        font-size: 2.4em;
+    }
+    .contenido-parrafo{
+        font-size: 1.5em;
+        margin-bottom: 2em;
+    }
+    
+}
