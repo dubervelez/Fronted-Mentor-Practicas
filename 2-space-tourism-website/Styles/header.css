@@ -25,7 +25,7 @@ body{
     align-items: center;
 }
 .nav-logo{
-    width: 4.8em;
+    min-width: 4.8em;
     height: 4.8em;
     border-radius: 50%;
     background-color: var(--c-white);
@@ -65,10 +65,91 @@ body{
 .nav-ul__li:hover{
     border-bottom: 0.3em solid #ffffff5d;
 }
-
 .nav-li__a{
     text-decoration: none;
     font-size: 1.6em;
     letter-spacing: 0.16em;
     color: var(--c-white);
+}
+
+.btn-mobile{
+    width: 4.8em;
+    height: 5.4em;
+    display: flex;
+    padding: 3.3em 2.4em 0 0;
+    display: none;
+}
+.btn-abrir-menu{
+    width: 100%;
+    cursor: pointer;
+}
+.btn-cerrar-menu{
+    display: none;
+    cursor: pointer;
+}
+
+
+/*------------------------MEDIA QUERY---------------------------------*/
+@media only screen and (max-width: 1310px){
+    .nav-ul::before{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .header{
+        padding: 0 0 0 3.9em;
+        transition: all 0.2s;
+    }
+    .nav-ul::before{
+        display: none;
+    }
+    .nav-ul{
+        width: 46em;
+        padding: 0 4.8em 0 4.8em;
+        
+    }
+    .nav-li__a{
+        font-size: 1.4em;
+    }
+    .nav-li__a > b{
+        display: none;
+    }
+}
+@media only screen and (max-width: 530px) {
+    .nav-ul{
+        width: 70%;
+        position: fixed;
+        flex-direction: column;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        padding: 0;
+        padding-left:3.2em;
+        justify-content: start;
+        align-items: flex-start;
+        padding-top: 11.8em;
+        transition: all 0.5s;
+    }
+    .nav-ul__li{
+        padding: 0;
+        margin-bottom: 3.2em;
+        height: auto;
+    }
+    .nav-li__a > b{
+        display: inline-block;
+    }
+    .nav-logo{
+        margin-top: 2.4em;
+    }
+    .btn-mobile{
+        display: block;
+    }
+    .btn-cerrar-menu{
+        display: block;
+        position: absolute;
+        top: 3.4em;
+        right: 2.7em;
+        width: 2em;
+    }
 }
