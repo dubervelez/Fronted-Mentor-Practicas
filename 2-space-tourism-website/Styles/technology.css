@@ -120,9 +120,7 @@ main{
 }
 
 
-@media only screen and (max-width: 1295px){
 
-}
 @media only screen and (max-width: 780px){
 
     .fondo-technology{
@@ -143,13 +141,16 @@ main{
         position: absolute;
         top: 136px;
         left: 38px;
+        
+        
     }
     .contenido-texto{
         display: flex;
         flex-direction: column;
     }
     .texto-primario{
-        width: 47em;
+        width: auto;
+        padding: 0 2em;
     }
     .contenido-subtitulo-2{
         margin-bottom: 0.69em;
@@ -165,7 +166,7 @@ main{
     }
     .subnav{
         display: flex;
-        margin: 3em auto;
+        margin: 0em auto;
 
     }
     .subnav__li{
@@ -180,8 +181,9 @@ main{
     .imagen{
         margin-top: 11.4em;
         width: 100%;
-        height: 31em;
+        height: 25%;
         padding: 0;
+        margin-bottom: 3em;
     }
     .img-1{
         display: none;
@@ -202,6 +204,7 @@ main{
         left: 50%;
         top: 100px;
         transform: translateX(-50%);
+        width: 80%;
     }
     .texto-primario{
         padding: 0 2em;
@@ -238,8 +241,6 @@ main{
     .imagen{
         margin-top: 6em;
         width: 100%;
-        height: 20em;
-        margin-bottom: 0;
         padding-bottom: 0;
     }
 }

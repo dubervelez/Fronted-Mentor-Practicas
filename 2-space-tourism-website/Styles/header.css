@@ -78,6 +78,7 @@ body{
     display: flex;
     padding: 3.3em 2.4em 0 0;
     display: none;
+    margin-top: -2em;
 }
 .btn-abrir-menu{
     width: 100%;

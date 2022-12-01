@@ -62,6 +62,10 @@ body{
     background-color: var(--c-white);
     display: grid;
     place-items: center;
+    cursor: pointer;
+}
+.circulo:hover{
+    outline: 3em solid #ffffff23;
 }
 
 .circulo >span{
@@ -73,7 +77,7 @@ body{
 
 
 /*------------------------MEDIA QUERY---------------------------------*/
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1000px) {
     .seccion-contenido{
         justify-content: center;
     }
@@ -110,6 +114,7 @@ body{
     .circulo{
         width: 24em;
         height: 24em;
+
     }
     
 }

@@ -1,0 +1,14 @@
+footer{
+    background-color: #0a0c22;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 0.15em;
+}
+
+footer > a{
+    margin-right: 1em;
+}
