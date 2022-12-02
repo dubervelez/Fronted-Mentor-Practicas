@@ -1,0 +1,52 @@
+@import "./colors";
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: $bg-screen;
+}
+
+.contenedor-header{
+    width: 100%;
+    height: 6rem;
+    border-radius: 0.3125rem;
+    border: 0.1875rem solid rgba($color: #ffffff, $alpha: 0.29);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem 0 1.4375rem;
+}
+
+
+.header-titulo{
+    
+}
+.header-titulo__h1{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.3125rem;
+    line-height: 1rem;
+    color: $white;
+}
+.header-score{
+    width: 5rem;
+    height: 4.5rem;
+    border-radius: 0.25rem;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.score-span{
+    font-weight: 600;
+    font-size: 0.625rem;
+    letter-spacing: 0.0975rem;
+    color: $Score-Text;
+}
+.score-marcador{
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 0;
+    color: $Dark-Text;
+}
