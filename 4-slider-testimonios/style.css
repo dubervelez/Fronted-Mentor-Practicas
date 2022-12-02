@@ -1,0 +1,112 @@
+/*Definicion de colores*/
+:root{
+    --Dark-Blue: hsl(240, 38%, 20%);
+    --Grayish-Blue: hsl(240, 18%, 77%);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-principal{
+    width: 90%;
+    height: 70vh;
+    position: relative;
+}
+.slider{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.img-fondo{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    z-index: 10;
+}
+.fondo:nth-child(1){
+    height: 8em;
+    width: 10em;
+    top: 2em;
+    left: 13em;
+    position: absolute;
+    z-index: 25;
+}
+.fondo:nth-child(2){
+    height: 47em;
+    width: 500px;
+    right: 0em;
+    position: absolute;
+}
+.slider-testimonio{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+    margin: auto;
+    display: none;
+    transform: scale(0);
+}
+.slider-testimonio.activo{
+    display: flex;
+    transform: scale(1);
+    transition: all 1s;
+}
+.testimonio-descripcion{
+    width: 65%;
+    color: var(--Dark-Blue);
+}
+.testimonio-descripcion > p{
+    font-size: 3.2em;
+    line-height: 1.6em;
+    font-weight: 300;
+    margin-bottom: 1em;
+    position: relative;
+    z-index: 18;
+}
+.testimonio-descripcion > span{
+    font-size: 1.6em;
+}
+.testimonio-imagen{
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    z-index: 15;
+    left: 60%;
+}
+.testimonio-imagen > img{
+    height: 100%;
+}
+.btn{
+    position: absolute;
+    right: 40em;
+    bottom: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 8em;
+    border-radius: 2em;
+    background-color: #ffffff;
+    z-index: 30;
+    padding: 1em;
+}
+.next, .prev{
+    cursor: pointer;
+}
