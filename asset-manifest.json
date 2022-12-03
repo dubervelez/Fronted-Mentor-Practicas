@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Fronted-Mentor-Practicas/4-slider-testimonios/static/css/main.30f8ed26.css",
-    "main.js": "/Fronted-Mentor-Practicas/4-slider-testimonios/static/js/main.43d4829c.js",
-    "static/media/icon-paper.svg": "/Fronted-Mentor-Practicas/4-slider-testimonios/static/media/icon-paper.8b57a6b108c1b8ae82931a39b10f96a2.svg",
-    "static/media/icon-scissors.svg": "/Fronted-Mentor-Practicas/4-slider-testimonios/static/media/icon-scissors.3b1a5d7eb0b2f1fd3e955865ec04d9ed.svg",
-    "index.html": "/Fronted-Mentor-Practicas/4-slider-testimonios/index.html",
-    "static/media/icon-rock.svg": "/Fronted-Mentor-Practicas/4-slider-testimonios/static/media/icon-rock.476e90a9646a87bb3645d2f09f4f7fba.svg",
-    "static/media/bg-triangle.svg": "/Fronted-Mentor-Practicas/4-slider-testimonios/static/media/bg-triangle.77c6ca418d3751d8f717.svg",
-    "main.30f8ed26.css.map": "/Fronted-Mentor-Practicas/4-slider-testimonios/static/css/main.30f8ed26.css.map",
-    "main.43d4829c.js.map": "/Fronted-Mentor-Practicas/4-slider-testimonios/static/js/main.43d4829c.js.map"
+    "main.css": "/Fronted-Mentor-Practicas/juego-piedra-papel/5-game-paper/static/css/main.bf147aac.css",
+    "main.js": "/Fronted-Mentor-Practicas/juego-piedra-papel/5-game-paper/static/js/main.8ad46d1c.js",
+    "static/media/icon-paper.svg": "/Fronted-Mentor-Practicas/juego-piedra-papel/5-game-paper/static/media/icon-paper.8b57a6b108c1b8ae82931a39b10f96a2.svg",
+    "static/media/icon-scissors.svg": "/Fronted-Mentor-Practicas/juego-piedra-papel/5-game-paper/static/media/icon-scissors.3b1a5d7eb0b2f1fd3e955865ec04d9ed.svg",
+    "index.html": "/Fronted-Mentor-Practicas/juego-piedra-papel/5-game-paper/index.html",
+    "static/media/icon-rock.svg": "/Fronted-Mentor-Practicas/juego-piedra-papel/5-game-paper/static/media/icon-rock.476e90a9646a87bb3645d2f09f4f7fba.svg",
+    "static/media/bg-triangle.svg": "/Fronted-Mentor-Practicas/juego-piedra-papel/5-game-paper/static/media/bg-triangle.77c6ca418d3751d8f717.svg",
+    "main.bf147aac.css.map": "/Fronted-Mentor-Practicas/juego-piedra-papel/5-game-paper/static/css/main.bf147aac.css.map",
+    "main.8ad46d1c.js.map": "/Fronted-Mentor-Practicas/juego-piedra-papel/5-game-paper/static/js/main.8ad46d1c.js.map"
   },
   "entrypoints": [
-    "static/css/main.30f8ed26.css",
-    "static/js/main.43d4829c.js"
+    "static/css/main.bf147aac.css",
+    "static/js/main.8ad46d1c.js"
   ]
 }
