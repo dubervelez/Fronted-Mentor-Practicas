@@ -1,0 +1,114 @@
+/* importacion de fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* Definicion de colores*/
+:root{
+    
+/*Primary*/
+    --c-Dark-cyan: hsl(185, 75%, 39%);
+    --c-Very-dark-blue: hsl(229, 23%, 23%);
+    --c-Dark-grayish-blue: hsl(227, 10%, 46%);
+
+/*Neutral*/
+
+    --c-Dark-gray: hsl(0, 0%, 59%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+.contenedor-principal{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--c-Dark-cyan);
+    background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+    background-position: right 48vw bottom 38vh, left 40vw top 44vh;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items:center ;
+}
+
+
+
+.contenedor-componente{
+    height: 390px;
+    width: 85%;
+    max-width: 340px;
+    border-radius: 14px;
+    background-image: url("./images/bg-pattern-card.svg");
+    background-position:  top 0 right 0 left 0; 
+    background-repeat: no-repeat; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: white;
+}
+.coponente-datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 27.5px;
+}
+.datos-imagen{
+    border-radius: 50%;
+    border:  5px solid white;
+    margin-bottom: 18px;
+}
+.datos-nombre{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--c-Very-dark-blue);
+    margin-bottom: 10px;
+}   
+.datos-nombre > span{
+    color: var(--c-Dark-grayish-blue);
+    font-weight: 400;
+}
+.datos-pais{
+    color: var(--c-Dark-grayish-blue);
+}
+.conponente-redes{
+    width: 100%;
+    display: flex;
+    padding: 27.5px 40px 30px 40px;
+    justify-content: space-between;
+    border-top: 1px solid #9e9d9d65;
+}
+.seguimiento-redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.seguimiento-redes > p{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--c-Very-dark-blue);
+    margin-bottom: 2px;
+    
+}
+
+.seguimiento-redes > span{
+    font-weight: 400;
+    color: var(--c-Dark-grayish-blue);
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+@media only screen and (min-width: 800px) {
+    .contenedor-principal{
+        background-position: right 50vw bottom 34vh, left 48vw top 52vh;
+    }
+}
